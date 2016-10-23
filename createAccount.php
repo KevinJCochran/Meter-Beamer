@@ -80,5 +80,10 @@
 
 	<button type="submit" class="btn btn-primary" id="alignButton" style="width:205px" name="submit">Submit</button>
 	</form>
+
+	<!-- CAPITAL ONE -->
+	<script src="scripts/capitalone.js"></script>
+
+	
 </body>
 </html>

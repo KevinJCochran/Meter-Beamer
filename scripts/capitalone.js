@@ -16,7 +16,8 @@ $("#alignButton").click(function(event) {
 
 var streetNumber; 
 var streetName;
-
+var customer_id;
+var bank_id;
 
 
 //Creates customer along with its account
@@ -47,9 +48,9 @@ function create_customer()
 		}),
 		success: function(data) {
 
-			var id = data.objectCreated._id;
+			customer_id = data.objectCreated._id;
 
-			create_bank_account(id);
+			create_bank_account(customer_id);
 
 			console.log(JSON.stringify(data));// ACCOUNT CREATED YAY!
 
@@ -64,8 +65,8 @@ function create_bank_account(id)
 {	
 	//create bank account with customer id 
 	console.log("were inside bank account funtion");
-	var text = generateAccountNumber();
-	console.log("ACCT:" + text);
+	bank_id = generateAccountNumber();
+	console.log("ACCT:" + bank_id);
 	console.log("Customer ID:" + id);
 	var nick_name = id.charAt(0) + id.charAt(1) + id.charAt(2) + id.charAt(3);
 
@@ -89,7 +90,7 @@ function create_bank_account(id)
 			nickname: nick_name,
 			rewards: 0,
 			balance: 10.00,
-			account_number: text
+			account_number: bank_id
 		}),
 		success: function(data) {
 
