@@ -4,6 +4,9 @@ create_customer();
 //Creates customer along with its account
 function create_customer()
 {
+	//splits address
+	split_address($('$first_name'));
+
 	//create customer
 	$.ajax({
 		url: "http://api.reimaginebanking.com/customers?key=bb67d82aa016521f06cd766920159874",
@@ -14,8 +17,8 @@ function create_customer()
 			'Accept': 'application/json'
 		},
 		data: JSON.stringify({
-			first_name: "rezzz",       //$("#first_name").html();  //------>>>>>>>>>>>
-			last_name: "Salim",
+			first_name: $('#first_name').val(), 
+			last_name: $('#last_name').val(),
 			address: {
 	    		street_number: "123",
 	    		street_name: "apple st.",
@@ -98,7 +101,23 @@ function generateAccountNumber()
 	return account_number;
 }
 
+//split address
 
+
+function split_address()
+{
+
+
+
+
+
+
+
+
+
+
+
+}
 
 
 //pay the merchant 
