@@ -1,7 +1,17 @@
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
 .title {
 	padding-left: 30px;
 	font-family: 'Bungee Inline', cursive;
-	background-color: #A1CBBE; 
+	background-color: #A1CBBE;
 }
 
-
+#metersearch {
+	background-image: url("../images/parking_meter.jpeg");
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+}
