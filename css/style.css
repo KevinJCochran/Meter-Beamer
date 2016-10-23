@@ -25,6 +25,10 @@ html, body {
 	line-height: 425px;
 }
 
+.transparent1 {
+	background-color:rgba(0, 0, 0, 0);
+}
+
 #alignright {
 	text-align: right;
 	margin-top: 5px;
@@ -44,7 +48,7 @@ html, body {
 }
 
 #marginTop {
-	margin-top: 80px;
+	margin-top: 50px;
 }
 
 #marginTop2 {
@@ -69,12 +73,14 @@ html, body {
 	margin: 0 auto;
 }
 
-#login-info {
+.login-info {
   padding: 20px;
+  width: 450px;
   margin: 0 auto;
+  margin-top: 75px;
   text-align: center;
   border: none;
-  background-color: rgba(252, 252, 252, 0.3);
+  background-color: rgba(252, 252, 252, 0.85);
   border-radius: 5%;
   font-family: 'Open Sans Condensed', sans-serif;
   font-size: 18px;
