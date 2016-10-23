@@ -30,7 +30,18 @@ html, body {
 	margin-top: 5px;
 }
 
-.centerText {
+.headerText {
+	display: block;
 	text-align: center;
 	line-height: 100px;
+	font-weight: bold;
+}
+
+.centerInput {
+	text-align: center;
+	line-height: 50px;
+}
+
+#marginTop {
+	margin-top: 200px;
 }
