@@ -43,5 +43,13 @@ html, body {
 }
 
 #marginTop {
-	margin-top: 200px;
+	margin-top: 80px;
+}
+
+#marginTop2 {
+	margin-top: 75px;
+}
+
+#alignButton {
+	margin-left: 655px;
 }
