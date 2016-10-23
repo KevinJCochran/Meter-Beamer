@@ -84,6 +84,6 @@
 	<!-- CAPITAL ONE -->
 	<script src="scripts/capitalone.js"></script>
 
-	
+	<?php include("scripts/conn.php"); ?>
 </body>
 </html>
