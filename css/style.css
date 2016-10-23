@@ -6,7 +6,7 @@ html, body {
 .title {
 	padding-left: 30px;
 	font-family: 'Bungee Inline', cursive;
-	background-color: #A1CBBE;
+	background-color: #48C8A1;
 }
 
 #metersearch {
@@ -14,14 +14,42 @@ html, body {
 	background-size: cover;
 	width: 100%;
 	height: 65%;
-	filter: blur(4px);
 }
 
 .blur {
-    
+    filter: blur(4px);
 }
 
-.center {
+#centerSearchBox {
 	text-align: center;
-	line-height: 500px;
+	line-height: 425px;
+}
+
+#alignright {
+	text-align: right;
+	margin-top: 5px;
+}
+
+.headerText {
+	display: block;
+	text-align: center;
+	line-height: 100px;
+	font-weight: bold;
+}
+
+.centerInput {
+	text-align: center;
+	line-height: 50px;
+}
+
+#marginTop {
+	margin-top: 80px;
+}
+
+#marginTop2 {
+	margin-top: 75px;
+}
+
+#alignButton {
+	margin-left: 655px;
 }
