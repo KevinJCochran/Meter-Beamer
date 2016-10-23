@@ -40,6 +40,7 @@ html, body {
 .centerInput {
 	text-align: center;
 	line-height: 50px;
+	margin-left: 200px
 }
 
 #marginTop {
@@ -52,4 +53,29 @@ html, body {
 
 #alignButton {
 	margin-left: 655px;
+}
+
+.centerText {
+    text-align: center;
+}
+
+.centerBox {
+	margin: 0 auto;
+	text-align: center;
+	width: 300px;
+}
+
+.marginCenter {
+	margin: 0 auto;
+}
+
+#login-info {
+  padding: 20px;
+  margin: 0 auto;
+  text-align: center;
+  border: none;
+  background-color: rgba(252, 252, 252, 0.3);
+  border-radius: 5%;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 18px;
 }
