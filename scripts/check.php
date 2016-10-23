@@ -1,6 +1,6 @@
 <?php
 	// read in from html
-	if( isset($_POST["submit"]) ){
+	if(isset($_POST["submit"]) ){
 
 		$userName = $_POST["user_name"];
 		$password = $_POST["password"];
