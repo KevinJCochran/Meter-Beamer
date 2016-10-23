@@ -32,9 +32,15 @@
 	<div class="container-fluid" id="metersearch">
 		<div class="login-info">
 			<div class="centerText">
-				<h2>PAYMENT INFORMATION</h2>
+				<?php if(isset($_SESSION["username"])) { ?>
+					<h2>PAYMENT INFORMATION</h2>
+				<?php 
+				} else { ?>
+					<h2>PLEASE LOGIN</h2>
+				<?php } ?>
 			</div>
 
+			<?php if(isset($_SESSION["username"])) { ?>
 			<div class="centerBox" id="marginTop">
 				<div class="row">
 					<div class="form-group">
@@ -50,6 +56,7 @@
 					</div>
 				</div>
 			</div>
+			<?php } ?>
 		</div>
 	</div>
 
