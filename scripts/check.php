@@ -16,7 +16,7 @@
 		$collection = $db->users;
 		echo "Collection selected succsessfully";
 
-		$cursor = $collection->findOne({"userName":$userName},{"password":$password});
+		$cursor = $collection->findOne({"userName":"$userName"},{"password":"$password"});
 
 		if(isset($cursor))
 			$_SESSION["username"] = $cursor->userName;
