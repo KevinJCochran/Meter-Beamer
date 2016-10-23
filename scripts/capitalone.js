@@ -1,11 +1,29 @@
-create_customer();
+$("#alignButton").click(function(event) {
+	if($("#first_name").val() != "" && $("#last_name").val() != "" &&
+		$("#address").val() !="" && $("#user_name").val() !="" &&
+		$("#password").val() !="")
+	{
+		create_customer();
+	}
+	else
+	{
+		alert("PLEASE FILL OUT FORM!");
+	}
+});
+
+
+
+
+var streetNumber; 
+var streetName;
+
 
 
 //Creates customer along with its account
 function create_customer()
 {
 	//splits address
-	split_address($('$first_name'));
+	split_address();
 
 	//create customer
 	$.ajax({
@@ -20,8 +38,8 @@ function create_customer()
 			first_name: $('#first_name').val(), 
 			last_name: $('#last_name').val(),
 			address: {
-	    		street_number: "123",
-	    		street_name: "apple st.",
+	    		street_number: streetNumber,
+	    		street_name: streetName,
 	    		city: "New Brunswick",
 	    		state: "NJ",
 	    		zip: "08901"
@@ -78,7 +96,7 @@ function create_bank_account(id)
 
 			console.log(JSON.stringify(data));// ACCOUNT CREATED YAY!
 			console.log("YAY CREATED Bank Account!!!!");
-
+			
 		},
 		error: (xhr, textStatus, errorThrown) => { console.log(textStatus, errorThrown) }
 
@@ -107,17 +125,26 @@ function generateAccountNumber()
 function split_address()
 {
 
+	var data = $('$address').text();
 
+	var address = data.split(' ');
 
+	streetNumber  = address[0];
 
+	var text = address[1] + " " + address[2];
 
-
-
-
-
-
-
+	streetName = text;
 }
+
+
+
+
+
+
+
+
+
+
 
 
 //pay the merchant 
