@@ -17,6 +17,8 @@
 </head>
 
 <body>
+	<?php include("con.php"); ?>
+
 	<header class="container-fluid title">
 		<div class="col-md-4"><h3>Meter Beamer</h3></div>
 		
@@ -32,6 +34,7 @@
 		<h2>CREATE A NEW ACCOUNT</h2>
 	</div>
 
+	<form method="POST">
 	<div class="container" id="marginTop">
 		<div class="row">
 			<div class="col-md-3 col-md-offset-3">
@@ -75,7 +78,7 @@
 		</div>
 	</div>
 
-<button type="submit" class="btn btn-primary" id="alignButton" style="width:205px">Submit</button>
-
+<button type="submit" class="btn btn-primary" id="alignButton" style="width:205px" name="submit">Submit</button>
+</form>
 </body>
 </html>
