@@ -22,7 +22,7 @@
 		
 		<div class="col-md-8" id="alignright">
 			<a href="index.html"><button type="button" class="btn btn-default navbar-btn">Home</button></a>
-			<a href="signIn.html"><button type="button" class="btn btn-default navbar-btn">Sign in</button></a>
+			<a href="signIn.php"><button type="button" class="btn btn-default navbar-btn">Sign in</button></a>
 			<a href="#"><button type="button" class="btn btn-default navbar-btn">Create Account</button></a>
 			<button type="button" class="btn btn-default navbar-btn">Contact</button>
 		</div>

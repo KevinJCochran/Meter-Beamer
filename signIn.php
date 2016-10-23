@@ -1,3 +1,4 @@
+<?php include("scripts/session.php"); ?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,35 +22,38 @@
 		<div class="col-md-4"><h3>Meter Beamer</h3></div>
 		
 		<div class="col-md-8" id="alignright">
-			<a href="#"><button type="button" class="btn btn-default navbar-btn">Home</button></a>
+			<a href="index.html"><button type="button" class="btn btn-default navbar-btn">Home</button></a>
 			<a href="signIn.php"><button type="button" class="btn btn-default navbar-btn">Sign in</button></a>
 			<a href="createAccount.php"><button type="button" class="btn btn-default navbar-btn">Create Account</button></a>
 			<button type="button" class="btn btn-default navbar-btn">Contact</button>
 		</div>
 	</header>
 
-	<div class="container-fluid" id="metersearch">
-		<form class="form-inline" id="centerSearchBox">
-    			<label class="sr-only" >Amount</label>
-    			<div class="input-group">
-      				<input type="text" class="form-control" id="meter_id" name="meter_id" placeholder="Meter ID..." size="50">
-    			</div>
-  			<button type="submit" class="btn btn-primary">Park!</button>
-		</form>
+<div class="container-fluid" id="metersearch">
+<div class="login-info">
+	<div class="centerText">
+		<h2>SIGN INTO YOUR ACCOUNT</h2>
 	</div>
 
-	<div class="container-fluid">
-		<div class="col-md-4">
-			<span class="headerText">Find Parking</span>
+	<form method="POST" action="payPage.php">
+	<div class="centerBox" id="marginTop">
+		<div class="row">
+			<div class="form-group">
+				<label for="centerText">User Name</label>
+			    <input class="form-control centerText" id="user_name" name="user_name" placeholder="User Name">
+			</div>
 		</div>
 
-		<div class="col-md-4">
-			<span class="headerText">Get Parking</span>
+		<div class="row">
+			<div class="form-group">
+				<label>Password</label>
+			   	<input type="password" class="form-control centerText" id="password" name="name" placeholder="Password">
+			</div>
 		</div>
 
-		<div class="col-md-4">
-			<span class="headerText">About</span> 
-		</div>
+		<button type="submit" class="btn btn-primary" style="width:200px">Submit</button>
+	</div>
+	</form>
 	</div>
 
 </body>
