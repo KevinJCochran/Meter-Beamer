@@ -1,6 +1,6 @@
 <?php
 	// read in from html
-	if( isset($_POST["submit"]) ){
+	if(isset($_POST["submit"]) ){
 
 		$firstName = $_POST["first_name"];
 		$lastName = $_POST["last_name"];
