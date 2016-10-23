@@ -8,15 +8,6 @@
 		$userName = $_POST["user_name"];
 		$password = $_POST["password"];
 
-		$bankId = ?>
-
-		<script>bankId</script>
-
-		<?php $customerId = ?>
-
-		<script>customerId</script>
-
-		<?php 
 		// connect to mongodb
 		$m = new MongoClient();
 		echo "Connection to database successfully";
@@ -33,9 +24,7 @@
 	      	"lastName" => $lastName, 
 	      	"address" => $address,
 	      	"userName" => $userName,
-	      	"password" => $password,
-			"bankId" => $bankId,
-			"customerId" => $customerId
+	      	"password" => $password
 		);
 	
 		$collection->insert($document);

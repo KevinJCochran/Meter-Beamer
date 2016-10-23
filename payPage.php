@@ -17,6 +17,8 @@
 </head>
 
 <body>
+	<?php include("scripts/conn.php"); ?>
+
 	<header class="container-fluid title">
 		<div class="col-md-4"><h3>Meter Beamer</h3></div>
 		
