@@ -17,7 +17,7 @@
 </head>
 
 <body>
-	<?php include("con.php"); ?>
+	<?php include("scripts/con.php"); ?>
 
 	<header class="container-fluid title">
 		<div class="col-md-4"><h3>Meter Beamer</h3></div>
@@ -78,7 +78,7 @@
 		</div>
 	</div>
 
-<button type="submit" class="btn btn-primary" id="alignButton" style="width:205px" name="submit">Submit</button>
-</form>
+	<button type="submit" class="btn btn-primary" id="alignButton" style="width:205px" name="submit">Submit</button>
+	</form>
 </body>
 </html>
